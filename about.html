@@ -4,172 +4,215 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About - Twinkling Marketing</title>
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel = "icon" href = "./images/favicon.png" type = "images/png">
+  <link rel="icon" href="./images/favicon.png" type="image/png">
+
   <style>
+    :root{
+      --orange: #E26310;
+      --orange-hover: #C9550E;
+      --teal: #0F766E;
+      --soft-white: #FAFAFA;
+      --black: #000000;
+      --muted: #374151;
+      --border: #E5E7EB;
+    }
+
     html{
       margin:0;
       padding:0;
       overflow-x:hidden;
     }
-    body { font-family: 'Inter', sans-serif; background-color: #fff; color: #111; margin:0; padding:0; overflow-x:hidden;}
-    .text-gradient {
-      background: linear-gradient(135deg, #3b82f6, #10b981);
-      background-clip : text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--soft-white);
+      color: var(--black);
+      margin:0;
+      padding:0;
+      overflow-x:hidden;
     }
-    .bg-gradient{
-      background: linear-gradient(135deg, #3b82f6, #10b981);
+
+    /* Keyword highlight (Metallic Orange) */
+    .text-keyword{
+      color: var(--orange) !important;
+      font-weight: 700;
     }
+
+    /* Headings (Deep Teal) */
+    h1, h2, h3, h4, h5 {
+      color: var(--teal);
+    }
+
+    /* Optional muted text (still readable) */
+    .text-muted,
+    .text-secondary {
+      color: var(--muted) !important;
+    }
+
+    /* Logo / Brand */
     .nav-left{
       display: flex;
       align-items: center;
     }
-
     .logo{
       height : 50px;
       width : auto;
       margin-right : 10px;
       border-radius: 10px;
     }
-
     .brand-name{
       font-size: 20px;
-      font-weight : bold;
+      font-weight: 800;
+      color: var(--orange); /* Metallic orange brand name */
     }
-
     @media(max-width : 700px){
-  .logo{
-    height : 50px;
-  }
-
-  .brand-name{
-    font-size : 20px;
-  }
-}
-
-    .btn-neon {
-      background: linear-gradient(90deg, #10b981, #3b82f6);
-      color: white;
-      transition: transform 0.3s;
-      font-weight: bold;
+      .logo{ height: 50px; }
+      .brand-name{ font-size: 20px; }
     }
-    .btn-neon:hover { transform: scale(1.05); }
+
+    /* NAV link colors: black default, orange hover/active */
+    .navbar .nav-link{
+      color: var(--black) !important;
+      font-weight: 500;
+    }
+    .navbar .nav-link:hover,
+    .navbar .nav-link:focus{
+      color: var(--orange) !important;
+    }
+    .navbar .nav-link.active,
+    .navbar .nav-link[aria-current="page"]{
+      color: var(--orange) !important;
+      font-weight: 700;
+    }
+
+    /* Primary button: Metallic orange + white text */
+    .btn-primary{
+      background-color: var(--orange) !important;
+      border-color: var(--orange) !important;
+      color: #FFFFFF !important;
+      font-weight: 700;
+    }
+    .btn-primary:hover{
+      background-color: var(--orange-hover) !important;
+      border-color: var(--orange-hover) !important;
+      color: #FFFFFF !important;
+    }
+
+    /* Cards */
     .card-glow {
-      background: rgba(255,255,255,0.8);
-      backdrop-filter: blur(10px);
-      border-radius: 1.5rem;
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: 1.25rem;
       padding: 2rem;
-      box-shadow: 0 10px 30px rgba(59,130,246,0.3);
-      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
     .card-glow:hover {
-      transform: scale(1.05);
-      box-shadow: 0 10px 30px rgba(59,130,246,0.3);
+      transform: translateY(-4px);
+      box-shadow: 0 14px 30px rgba(0,0,0,0.10);
     }
+
+    /* Hero */
     .hero-section {
-      background: linear-gradient(to bottom right, #ffffff, #e0f7ff, #e0ffe0);
-      padding: 5rem 0;
-      text-align: center;
+      background-color: var(--soft-white);
       padding: 80px 0;
+      text-align: center;
     }
     .hero-container{
       margin-top : 100px;
     }
-    .mission-section {
-      background-color: #f8f9fa;
+
+    /* Story + Mission backgrounds */
+    .story-section,
+    .mission-section{
+      background-color: #FFFFFF;
       padding: 5rem 0;
     }
+    .mission-section{
+      background-color: var(--soft-white);
+    }
+
+    /* Icons circle */
+    .step-circle { 
+      width: 60px; 
+      height: 60px; 
+      border-radius: 50%; 
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      margin: 0 auto; 
+      background: var(--teal);
+    }
+    .step-circle img{
+      width: 26px;
+      height: 26px;
+      filter: brightness(0) invert(1); /* makes icon white */
+    }
+
+    .story{
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: var(--black);
+    }
+
+    /* CTA section */
     .cta-section {
-      background: linear-gradient(90deg, #3b82f6, #38ef7d);
+      background: var(--teal);
       color: white;
       padding: 5rem 0;
       text-align: center;
     }
-    .story-section{
-      background-color: #f8f9fa;
-      padding: 5rem 0;
-    }
-    .step-circle { 
-        width: 60px; 
-        height: 60px; 
-        border-radius: 50%; 
-        display: flex; 
-        align-items: center; 
-        justify-content: center; 
-        color: #fff; 
-        font-weight: bold; 
-        margin: 0 auto; 
-        background: linear-gradient(90deg,#3b82f6,#10b981); 
+    .cta-section h2,
+    .cta-section p{
+      color: #FFFFFF !important;
     }
 
-  .btn-gradient {
-    background: linear-gradient(90deg, #10b981, #3b82f6);
-    color: #fff;
-    border-radius: 0.5rem;
-    transition: opacity 0.3s;
-  }
-  .btn-gradient:hover {
-    opacity: 0.9;
-  }
-    .story{
-      font-size: larger;
-    }
-    .text-electric-blue {
-      color: hsl(220, 90%, 50%);
-    }
+    /* Footer */
     footer {
-      background-color: #111827; /* gray-900 equivalent */
+      background-color: #111827;
       color: white;
       padding : 40px 0;
     }
     footer a {
-      color: #9ca3af; /* gray-400 */
+      color: #9ca3af;
       text-decoration: none;
       transition: color 0.2s;
     }
     footer a:hover {
       color: white;
     }
-    .icon-box {
-      width: 32px;
-      height: 32px;
-      background: linear-gradient(to right, #3b82f6, #22c55e);
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }  
   </style>
 </head>
-<body>
+
+<body class="about-page">
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg fixed-top shadow-sm bg-white border-bottom">
   <div class="container">
     <!-- Logo --> 
-      <div class="nav-left">
-        <img src = "./images/Group.svg" alt = "logo" class = "logo">
-        <span class="text-gradient brand-name">Twinkling Marketing</span>
-      </div>
+    <div class="nav-left">
+      <img src="./images/Group.svg" alt="logo" class="logo">
+      <span class="brand-name">Twinkling Marketing</span>
+    </div>
 
     <!-- Mobile Toggle Button -->
-    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span><i data-feather="menu"></i></span>
     </button>
 
     <!-- Navigation Links -->
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto align-items-lg-center">
-        <li class="nav-item"><a href="index.html" class="nav-link text-secondary">Home</a></li>
-        <li class="nav-item"><a href="#about" class="nav-link active text-primary">About</a></li>
-        <li class="nav-item"><a href="services.html" class="nav-link text-secondary">Services</a></li>
-        <li class="nav-item"><a href="portfolio.html" class="nav-link text-secondary">Portfolio</a></li>
-        <li class="nav-item"><a href="contact.html" class="nav-link text-secondary">Contact</a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link active" aria-current="page">About</a></li>
+        <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+        <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
         <li class="nav-item ms-lg-3">
-          <button class="btn btn-primary fw-semibold" onclick = "window.location.href = 'contact.html'">
+          <button class="btn btn-primary fw-semibold" onclick="window.location.href='contact.html'">
             Book Consultation
           </button>
         </li>
@@ -179,20 +222,32 @@
 </nav>
 
 <!-- Hero Section -->
-<section class="hero-section">
+<section class="hero-section" id="about">
   <div class="container hero-container">
-    <h1 class="display-4 fw-bold">About <span class="text-gradient">Twinkling Marketing</span></h1>
-    <p class="lead mt-3">Founded in 2024, Twinkling Marketing has been at the forefront of digital innovation, helping businesses transform their online presence and achieve unprecedented growth.</p>
+    <h1 class="display-4 fw-bold">
+      About <span class="text-keyword">Twinkling Marketing</span>
+    </h1>
+
+    <p class="lead mt-3">
+      Twinkling Marketing is a digital marketing agency focused on helping businesses strengthen their online presence, reach the right audience, and achieve consistent growth through SEO, social media marketing, and paid advertising.
+    </p>
   </div>
 </section>
 
-<section class="py-5 text-center">
+<!-- Story Section -->
+<section class="py-5 text-center story-section">
   <div class="container">
-    <h2 class="fw-bold display-6">Our <span class="text-gradient">Story</span></h2>
+    <h2 class="fw-bold display-6">Our <span class="text-keyword">Story</span></h2>
     <div class="p-4 rounded-3 my-4">
-      <p class = "story">Twinkling started with a simple chat between two best friends. We were talking about how so many businesses were finding it tricky to keep up with the fast-changing world of digital marketing. We realized businesses needed fresh, creative, and data-driven strategies to truly shine online.</p>
-        <p class = "story">That conversation turned into an idea, and that idea grew into Twinkling. What began as two besties sharing thoughts became a vision: to make digital marketing simpler, smarter, and more impactful for businesses of all sizes.</p>
-        <p class ="story">Today, our team is built on that same energy - friendly, passionate, and dedicated to helping brands grow, glow, and twinkle in the digital space.</p>
+      <p class="story">
+        Twinkling started with a simple chat between two best friends. We were talking about how many businesses were finding it tricky to keep up with the fast-changing world of digital marketing.
+      </p>
+      <p class="story">
+        That conversation turned into an idea — to make digital marketing simpler, smarter, and more impactful for businesses of all sizes.
+      </p>
+      <p class="story">
+        Today, our team brings that same energy: friendly, focused, and dedicated to helping brands grow with clarity and confidence.
+      </p>
     </div>
   </div>
 </section>
@@ -200,172 +255,157 @@
 <!-- Mission Section -->
 <section class="mission-section text-center">
   <div class="container">
-    <h2 class="fw-bold display-6">Our <span class="text-gradient">Mission</span></h2>
-    <div class="bg-gradient p-4 rounded-3 my-4">
-      <p class="text-gray-800 mb-0">To empower businesses with innovative, data-driven marketing strategies that transform digital investments into lasting success.</p>
+    <h2 class="fw-bold display-6">Our <span class="text-keyword">Mission</span></h2>
+    <div class="p-4 rounded-3 my-4" style="background:#FFFFFF; border:1px solid var(--border);">
+      <p class="mb-0" style="color:#000000;">
+        Our mission is to help businesses grow through thoughtful, data-driven digital marketing strategies that create long-term value.
+      </p>
     </div>
 
     <!-- Values -->
     <div class="row g-4">
-        <div class="col-lg-3">
-          <div class="card card-glow p-3 text-center">
-            <div class="step-circle mb-3"><img src = "./images/target.svg"></div>
-            <h5 class="fw-bold mb-3">Result Driven</h5>
-            <p class="text-muted small">Every campaign is built to create real business outcomes.</p>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="card card-glow p-3 text-center">
-            <div class="step-circle mb-3"><img src="./images/heart.svg"></div>
-            <h5 class="fw-bold mb-3"> Client-Centered Approach</h5>
-            <p class="text-muted small">Your growth is our priority. We believe in partnerships built on trust.</p>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="card card-glow p-3 text-center">
-            <div class="step-circle mb-3"><img src = "./images/lightbulb.svg"></div>
-            <h5 class="fw-bold mb-3">Innovation at the Core</h5>
-            <p class="text-muted small">We stay ahead of trends so your business stays ahead of the competition.</p>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="card card-glow p-3 text-center">
-            <div class="step-circle mb-3"><img src = "./images/award.svg"></div>
-            <h5 class="fw-bold mb-3">Excellence</h5>
-            <p class="text-muted small">From planning to execution, we bring our best to every project.</p>
-          </div>
+      <div class="col-lg-3">
+        <div class="card card-glow p-3 text-center">
+          <div class="step-circle mb-3"><img src="./images/target.svg" alt="Result Driven"></div>
+          <h5 class="fw-bold mb-3">Result Driven</h5>
+          <p class="text-muted small">Every campaign is built to create real business outcomes.</p>
         </div>
       </div>
+
+      <div class="col-lg-3">
+        <div class="card card-glow p-3 text-center">
+          <div class="step-circle mb-3"><img src="./images/heart.svg" alt="Client Centered"></div>
+          <h5 class="fw-bold mb-3">Client-Centered</h5>
+          <p class="text-muted small">Your growth is our priority. We believe in partnerships built on trust.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card card-glow p-3 text-center">
+          <div class="step-circle mb-3"><img src="./images/lightbulb.svg" alt="Innovation"></div>
+          <h5 class="fw-bold mb-3">Innovation</h5>
+          <p class="text-muted small">We stay ahead of trends so your business stays ahead of the competition.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card card-glow p-3 text-center">
+          <div class="step-circle mb-3"><img src="./images/award.svg" alt="Excellence"></div>
+          <h5 class="fw-bold mb-3">Excellence</h5>
+          <p class="text-muted small">From planning to execution, we bring our best to every project.</p>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
 <!-- Team Section -->
 <section class="py-5 text-center">
   <div class="container">
-    <h2 class="fw-bold mb-4 display-6">Meet Our <span class="text-gradient">Team</span></h2>
+    <h2 class="fw-bold mb-4 display-6">Meet Our <span class="text-keyword">Team</span></h2>
     <p class="lead mb-5">The passionate experts behind your success</p>
+
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
       <div class="col">
         <div class="card-glow p-4">
           <h5 class="fw-bold mt-3">Thanushiya</h5>
-          <p class="text-primary fw-medium">Founder & CEO</p>
+          <p class="text-keyword mb-2">Founder & CEO</p>
           <p class="text-muted small mt-2">As a marketer and entrepreneur, I believe every brand has the right to stand out and shine.</p>
         </div>
       </div>
+
       <div class="col">
         <div class="card-glow p-4">
           <h5 class="fw-bold mt-3">Sruji Vineshkumar</h5>
-          <p class="text-primary fw-medium">Head of Strategy</p>
-          <p class="text-muted small mt-2">A well-crafted strategy can unlock a brand’s ability to differentiate itself and achieve its greatest success.</p>
+          <p class="text-keyword mb-2">Head of Strategy</p>
+          <p class="text-muted small mt-2">A well-crafted strategy can unlock a brand’s ability to differentiate itself and achieve meaningful growth.</p>
         </div>
       </div>
     </div>
+
   </div>
 </section>
 
 <!-- CTA Section -->
-<section class="cta-section hero-section">
-  <div class="container">
-    <h2 class="display-5 fw-bold">Ready to Work Together?</h2>
-    <p class="lead mt-3 mb-4">Let’s explore how our team can take your digital marketing to the next level.</p>
-    <button class="btn btn-neon btn-lg" onclick = "window.location.href = 'contact.html'">Get in Touch ⚡</button>
-  </div>
+<section class="cta-section">
+  <h2>Ready to Work Together?</h2>
+  <p>If you’re looking for a marketing partner focused on strategy, clarity, and growth, let’s connect.</p>
+  <a href="contact.html" class="btn btn-primary">Get in Touch</a>
 </section>
- <!-- Footer -->
-  <footer class="pt-5 pb-3 bg-dark">
-    <div class="container bg-dark">
-      <div class="row g-4">
-        <!-- Company Info -->
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <div class = "nav-left">
-            <img src = "./images/Group.svg" alt = "Logo" class = "logo">
-            <span class = "text-gradient brand-name">Twinkling Marketing</span>
-          </div> 
-          <p class="text-secondary small">
-            Turning clicks into loyal customers through marketing strategies powered by data.
-          </p>
-          <div class="d-flex gap-3">
-            <a href="https://www.instagram.com/twinkling_marketing/"><img src="./images/instagram.svg" class="img-fluid" alt="Instagram" style="width:24px;"></a>
-            <a href="https://www.linkedin.com/company/twinkling-marketing"><img src="./images/linkedin.svg" class="img-fluid" alt="LinkedIn" style="width:24px;"></a>
-          </div>
-        </div>
 
-        <!-- Quick Links -->
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <h5 class="fw-semibold mb-3">Quick Links</h5>
-          <ul class="list-unstyled">
-            <li><a href="index.html" class="text-secondary text-decoration-none">Home</a></li>
-            <li><a href="#about" class="text-secondary text-decoration-none">About</a></li>
-            <li><a href="services.html" class="text-secondary text-decoration-none">Services</a></li>
-            <li><a href="portfolio.html" class="text-secondary text-decoration-none">Portfolio</a></li>
-            <li><a href="contact.html" class="text-secondary text-decoration-none">Contact</a></li>
-          </ul>
+<!-- Footer -->
+<footer class="pt-5 pb-3 bg-dark">
+  <div class="container bg-dark">
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="nav-left">
+          <img src="./images/Group.svg" alt="Logo" class="logo">
+          <span class="brand-name" style="color:#E26310;">Twinkling Marketing</span>
         </div>
-
-        <!-- Services -->
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <h5 class="fw-semibold mb-3">Services</h5>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-secondary text-decoration-none">SEO Optimization</a></li>
-            <li><a href="#" class="text-secondary text-decoration-none">Social Media Marketing</a></li>
-            <li><a href="#" class="text-secondary text-decoration-none">Paid Advertising</a></li>
-            <li><a href="#" class="text-secondary text-decoration-none">Brand Strategy</a></li>
-            <li><a href="#" class="text-secondary text-decoration-none">Content Marketing</a></li>
-          </ul>
-        </div>
-
-        <!-- Contact Info -->
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <h5 class="fw-semibold mb-3">Get in Touch</h5>
-          <ul class="list-unstyled">
-            <li class="d-flex align-items-center mb-2">
-              <img src="./images/mail.svg" class="me-2 img-fluid" style="width:20px;" alt="Mail">
-              <span class="text-secondary small">info@twinklingmarketing.com</span>
-            </li>
-            <li class="d-flex align-items-center">
-              <img src="./images/map-pin.svg" class="me-2 img-fluid" style="width:20px;" alt="Location">
-              <span class="text-secondary small">Austin, Texas</span>
-            </li>
-          </ul>
+        <p class="text-secondary small">
+          Turning clicks into loyal customers through marketing strategies powered by data.
+        </p>
+        <div class="d-flex gap-3">
+          <a href="https://www.instagram.com/twinkling_marketing/"><img src="./images/instagram.svg" class="img-fluid" alt="Instagram" style="width:24px;"></a>
+          <a href="https://www.linkedin.com/company/twinkling-marketing"><img src="./images/linkedin.svg" class="img-fluid" alt="LinkedIn" style="width:24px;"></a>
         </div>
       </div>
 
-      <!-- Bottom Bar -->
-      <div class="border-top border-secondary mt-4 pt-3 d-flex flex-column flex-md-row justify-content-between align-items-center mb-3">
-        <p class="text-secondary small mb-2 mb-md-0">© 2025 Twinkling Marketing. All rights reserved.</p>
-        <div class="d-flex gap-3 flex-wrap mb-3">
-          <a href="#" class="text-secondary text-decoration-none small">Privacy Policy</a>
-          <a href="#" class="text-secondary text-decoration-none small">Terms of Service</a>
-          <a href="#" class="text-secondary text-decoration-none small">Cookie Policy</a>
-        </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <h5 class="fw-semibold mb-3">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-secondary text-decoration-none">Home</a></li>
+          <li><a href="#about" class="text-secondary text-decoration-none">About</a></li>
+          <li><a href="services.html" class="text-secondary text-decoration-none">Services</a></li>
+          <li><a href="portfolio.html" class="text-secondary text-decoration-none">Portfolio</a></li>
+          <li><a href="contact.html" class="text-secondary text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <h5 class="fw-semibold mb-3">Services</h5>
+        <ul class="list-unstyled">
+          <li><span class="text-secondary small">SEO Optimization</span></li>
+          <li><span class="text-secondary small">Social Media Marketing</span></li>
+          <li><span class="text-secondary small">Paid Advertising</span></li>
+          <li><span class="text-secondary small">Brand Strategy</span></li>
+          <li><span class="text-secondary small">Content Marketing</span></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <h5 class="fw-semibold mb-3">Get in Touch</h5>
+        <ul class="list-unstyled">
+          <li class="d-flex align-items-center mb-2">
+            <img src="./images/mail.svg" class="me-2 img-fluid" style="width:20px;" alt="Mail">
+            <span class="text-secondary small">info@twinklingmarketing.com</span>
+          </li>
+          <li class="d-flex align-items-center">
+            <img src="./images/map-pin.svg" class="me-2 img-fluid" style="width:20px;" alt="Location">
+            <span class="text-secondary small">Austin, Texas</span>
+          </li>
+        </ul>
       </div>
     </div>
-  </footer>
+
+    <div class="border-top border-secondary mt-4 pt-3 d-flex flex-column flex-md-row justify-content-between align-items-center mb-3">
+      <p class="text-secondary small mb-2 mb-md-0">© 2025 Twinkling Marketing. All rights reserved.</p>
+      <div class="d-flex gap-3 flex-wrap mb-3">
+        <a href="#" class="text-secondary text-decoration-none small">Privacy Policy</a>
+        <a href="#" class="text-secondary text-decoration-none small">Terms of Service</a>
+        <a href="#" class="text-secondary text-decoration-none small">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/feather-icons"></script>
 <script>
   feather.replace();
+</script>
 
-  const btn = document.getElementById('mobile-menu-btn');
-  const menu = document.getElementById('mobile-menu');
-
-  btn.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
-    // Toggle icon
-    const icon = btn.querySelector('i');
-    icon.dataset.feather = menu.classList.contains('hidden') ? 'menu' : 'x';
-    feather.replace();
-  });
-</script>  
 </body>
 </html>
-
-
-
-
-
-
-
-
