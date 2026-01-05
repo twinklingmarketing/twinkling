@@ -1,13 +1,15 @@
-:root{
-  --teal: #004747;
-  --teal-hover: #0A5F5F;
-  --charcoal: #111827;
-  --white: #FFFFFF;
+:root {
+  --metallic-orange: #E26310;
+  --metallic-orange-hover: #C9550E;
+
+  --deep-teal: #0F766E;
+
   --soft-white: #FAFAFA;
-  --text: #374151;
-  --muted: #6B7280;
-  --border: #E5E7EB;
-  --teal-glow: rgba(0, 71, 71, 0.25);
+  --white: #FFFFFF;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--deep-teal) !important;
 }
 
 /* Reset & Base */
@@ -26,6 +28,11 @@ body, html {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.text-keyword {
+  color: var(--metallic-orange) !important;
+  font-weight: 600;
 }
 
 
@@ -229,6 +236,7 @@ body, html {
   align-items: center;
   justify-content: center;
 }
+
 
 
 
