@@ -287,6 +287,73 @@ body, html {
   justify-content: center;
 }
 
+/* =========================
+   ABOUT PAGE STYLES ONLY
+   ========================= */
+
+/* About page background */
+.about-page {
+  background-color: #FAFAFA;
+}
+
+/* About page headings */
+.about-page h1,
+.about-page h2,
+.about-page h3 {
+  color: #0F766E;
+}
+
+/* About page body text */
+.about-page p,
+.about-page li {
+  color: #000000;
+}
+
+/* Highlighted keywords */
+.about-page .text-keyword {
+  color: #E26310 !important;
+  font-weight: 600;
+}
+
+/* Section spacing (clean & premium) */
+.about-page section {
+  padding: 80px 0;
+}
+
+/* Team cards */
+.about-page .card {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.04);
+}
+
+/* Team names */
+.about-page .team-name {
+  color: #0F766E;
+  font-weight: 700;
+}
+
+/* CTA section */
+.about-page .cta-section {
+  background-color: #0F766E;
+}
+
+.about-page .cta-section h2,
+.about-page .cta-section p {
+  color: #FFFFFF;
+}
+
+/* CTA button */
+.about-page .cta-section .btn {
+  background-color: #E26310;
+  color: #FFFFFF;
+  border-color: #E26310;
+}
+
+.about-page .cta-section .btn:hover {
+  background-color: #C9550E;
+}
+
 
 
 
