@@ -240,21 +240,18 @@ body, html {
   margin-bottom: 1.5rem;
 }
 .stats-icon {
-  color: var(--pureblack);
-  width: 25px;
-  height: 25px;
+  color: #E26310 !important;
 }
+
 .stats-number {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #E26310 !important; /* Metallic Orange */
+  color: #E26310 !important;
+  font-weight: 800;
 }
 
 .stats-text {
-  font-size: 1rem;
-  color: #000000 !important; /* Pure black */
+  color: #000000 !important;
+  font-weight: 500;
 }
-
 
 @media (min-width: 768px) {
   .stats-number {
@@ -292,6 +289,7 @@ body, html {
   align-items: center;
   justify-content: center;
 }
+
 
 
 
