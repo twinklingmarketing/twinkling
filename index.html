@@ -15,32 +15,49 @@
 <nav class="navbar navbar-expand-lg fixed-top shadow-sm bg-white border-bottom">
   <div class="container">
     <!-- Logo -->
-    <div class = "nav-left">
-      <img src = "./images/Group.svg" alt = "Logo" class = "logo">
-      <span class = "text-keyword brand-name">Twinkling Marketing</span>
-    </div> 
-    
+    <a class="navbar-brand nav-left d-flex align-items-center" href="index.html">
+      <img src="./images/Group.svg" alt="Twinkling Marketing logo" class="logo">
+      <span class="brand-name ms-2">Twinkling Marketing</span>
+    </a>
 
     <!-- Mobile Toggle Button -->
-    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <i data-feather="menu"></i>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
     </button>
 
     <!-- Navigation Links -->
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto align-items-lg-center">
-        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        <li class="nav-item"><a href="about.html" class="nav-link text-secondary">About</a></li>
-        <li class="nav-item"><a href="services.html" class="nav-link text-secondary">Services</a></li>
-        <li class="nav-item"><a href="portfolio.html" class="nav-link text-secondary">Portfolio</a></li>
-        <li class="nav-item"><a href="contact.html" class="nav-link text-secondary">Contact</a></li>
-        <li class="nav-item ms-lg-3">
-          <button class="btn btn-primary fw-semibold" onclick = "window.location.href='contact.html'">Book Consultation</button>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+
+        <li class="nav-item ms-lg-3">
+          <a class="btn btn-primary fw-semibold" href="contact.html">Book Consultation</a>
+        </li>
+
       </ul>
     </div>
   </div>
 </nav>
+
 
 <!-- Hero Section -->
 <section id="home" class="hero-section position-relative py-5 mt-5">
@@ -220,6 +237,7 @@
 </script>
 </body>
 </html>
+
 
 
 
