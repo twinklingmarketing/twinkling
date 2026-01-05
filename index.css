@@ -2,7 +2,7 @@
   --metallic-orange: #E26310;
   --metallic-orange-hover: #C9550E;
 
-  --pure black: #000000;
+  --pureblack: #000000;
 
   --soft-white: #FAFAFA;
   --white: #FFFFFF;
@@ -236,6 +236,7 @@ body, html {
   align-items: center;
   justify-content: center;
 }
+
 
 
 
