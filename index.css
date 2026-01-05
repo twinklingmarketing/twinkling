@@ -264,10 +264,6 @@ body, html {
   border-radius: 10px;
 }
 
-.text-electric-blue {
-  color: #E26310 !important; /* Metallic Orange */
-}
-
     footer {
       background-color: #111827; /* gray-900 equivalent */
       color: white;
@@ -290,6 +286,7 @@ body, html {
   align-items: center;
   justify-content: center;
 }
+
 
 
 
