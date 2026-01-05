@@ -62,12 +62,9 @@ h1, h2, h3, h4, h5, h6 {
 /* Brand name (Twinkling Marketing) */
 .navbar .brand-name {
   color: #E26310 !important; /* Metallic Orange */
-  font-weight: 700;
+  font-weight: 900;
 }
 
-.navbar-brand {
-  gap: 8px;
-}
 
 /* Reset & Base */
 body, html {
@@ -295,6 +292,7 @@ body, html {
   align-items: center;
   justify-content: center;
 }
+
 
 
 
