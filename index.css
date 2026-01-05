@@ -2,14 +2,14 @@
   --metallic-orange: #E26310;
   --metallic-orange-hover: #C9550E;
 
-  --deep-teal: #0F766E;
+  --pure black: #000000;
 
   --soft-white: #FAFAFA;
   --white: #FFFFFF;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--deep-teal) !important;
+  color: var(--deep-pureblack) !important;
 }
 
 /* Reset & Base */
@@ -24,7 +24,7 @@ body, html {
 
 /* Text Gradient */
 .text-gradient {
-  background: linear-gradient(135deg, var(--teal), var(--charcoal));
+  background: linear-gradient(135deg, var(--pureblack), var(--charcoal));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -80,7 +80,7 @@ body, html {
   transition: opacity 0.3s, transform 0.3s;
 }
 .btn-gradient {
-  background: linear-gradient(90deg, var(--teal), var(--charcoal));
+  background: linear-gradient(90deg, var(--pureblack), var(--charcoal));
   color: var(--white);
   border-radius: 0.5rem;
   transition: opacity 0.3s, transform 0.3s, background-color 0.3s;
@@ -91,18 +91,18 @@ body, html {
 }
 
 .btn-cta{
-  background-color: var(--teal);
+  background-color: var(--pureblack);
   color: var(--white);
 }
 
 .btn-electric {
-  background-color: var(--teal);
+  background-color: var(--pureblack);
   color: var(--white);
-  box-shadow: 0 10px 30px -5px var(--teal-glow);
+  box-shadow: 0 10px 30px -5px var(--pureblack-glow);
   transition: transform 0.3s, background-color 0.3s;
 }
 .btn-electric:hover {
-  background-color: var(--teal-hover);
+  background-color: var(--pureblack-hover);
   transform: scale(1.03);
 }
 
@@ -133,7 +133,7 @@ body, html {
 /* Cards */
 .card-glow {
   border: 1px solid rgba(0, 71, 71, 0.18);
-  box-shadow: 0 10px 30px -5px var(--teal-glow);
+  box-shadow: 0 10px 30px -5px var(--pureblack-glow);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 .card-glow:hover {
@@ -144,7 +144,7 @@ body, html {
 
 /* CTA Section */
 .cta-section {
-  background: linear-gradient(135deg, var(--charcoal), var(--teal));
+  background: linear-gradient(135deg, var(--charcoal), var(--pureblack));
   color: var(--white);
   padding: 80px 0;
 }
@@ -186,7 +186,7 @@ body, html {
   margin-bottom: 1.5rem;
 }
 .stats-icon {
-  color: var(--teal);
+  color: var(--pureblack);
   width: 25px;
   height: 25px;
 }
@@ -230,12 +230,13 @@ body, html {
  .icon-box {
   width: 32px;
   height: 32px;
-  background: linear-gradient(to right, var(--teal), var(--charcoal));
+  background: linear-gradient(to right, var(--pureblack), var(--charcoal));
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 
 
 
