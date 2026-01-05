@@ -12,6 +12,35 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--deep-pureblack) !important;
 }
 
+/* Primary CTA buttons */
+.btn,
+.btn-primary,
+.btn-cta {
+  background-color: #E26310 !important; /* Metallic Orange */
+  border-color: #E26310 !important;
+  color: #000000 !important; /* Pure black text */
+  font-weight: 600;
+}
+
+.btn:hover,
+.btn-primary:hover,
+.btn-cta:hover {
+  background-color: #C9550E !important;
+  border-color: #C9550E !important;
+  color: #000000 !important;
+}
+/* Secondary outline button */
+.btn-outline-primary {
+  border-color: #E26310 !important;
+  color: #000000 !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: #E26310 !important;
+  color: #000000 !important;
+}
+
+
 /* NAV LINK COLORS */
 .navbar .nav-link {
   color: #111827 !important;        /* pure black (charcoal) */
@@ -211,12 +240,14 @@ body, html {
 .stats-number {
   font-size: 2rem;
   font-weight: 700;
-  color: var(--charcoal);
+  color: #E26310 !important; /* Metallic Orange */
 }
+
 .stats-text {
   font-size: 1rem;
-  color: var(--muted);
+  color: #000000 !important; /* Pure black */
 }
+
 
 @media (min-width: 768px) {
   .stats-number {
@@ -254,6 +285,7 @@ body, html {
   align-items: center;
   justify-content: center;
 }
+
 
 
 
