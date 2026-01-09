@@ -105,7 +105,7 @@ body, html {
 }
 
 .logo{
-  height : 70px;
+  height : 80px;
   width : auto;
   margin-right : 10px;
   border-radius : 10px;
@@ -118,13 +118,21 @@ body, html {
 
 @media(max-width : 768px){
   .logo{
-    height : 55px;
+    height : 60px;
   }
 
   .brand-name{
     font-size : 20px;
   }
 }
+.navbar {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.nav-left{
+  gap: 12px;
+}
+
 
 /* Buttons */
  {
@@ -353,6 +361,7 @@ body, html {
 .about-page .cta-section .btn:hover {
   background-color: #C9550E;
 }
+
 
 
 
