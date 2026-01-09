@@ -40,8 +40,9 @@
       font-weight: 700;
     }
 
+    /* Headings (Deep Black) */
     h1, h2, h3, h4, h5 {
-      color: #000000 !important;
+      color: var(--Black);
     }
 
     /* Optional muted text (still readable) */
@@ -142,7 +143,7 @@
       align-items: center; 
       justify-content: center; 
       margin: 0 auto; 
-      background: #E26310;
+      background: var(--Black);
     }
     .step-circle img{
       width: 26px;
@@ -158,7 +159,7 @@
 
     /* CTA section */
     .cta-section {
-      background: #000000;
+      background: var(--Black);
       color: white;
       padding: 5rem 0;
       text-align: center;
@@ -192,7 +193,7 @@
   <div class="container">
     <!-- Logo --> 
     <div class="nav-left">
-     <img src="./images/logo.png" alt="Twinkling Marketing logo" class="logo">
+      <img src="./images/logo.svg" alt="logo" class="logo">
       <span class="brand-name">Twinkling Marketing</span>
     </div>
 
@@ -238,8 +239,13 @@
     <h2 class="fw-bold display-6">Our <span class="text-keyword">Story</span></h2>
     <div class="p-4 rounded-3 my-4">
       <p class="story">
-      Twinkling Marketing started as conversations between two best friends who shared a passion for digital marketing and a desire to help businesses navigate an increasingly complex online landscape. 
-      Those conversations evolved into a mission to make digital marketing more strategic, effective, and accessible for brands of all sizes.
+        Twinkling started with a simple chat between two best friends. We were talking about how many businesses were finding it tricky to keep up with the fast-changing world of digital marketing.
+      </p>
+      <p class="story">
+        That conversation turned into an idea — to make digital marketing simpler, smarter, and more impactful for businesses of all sizes.
+      </p>
+      <p class="story">
+        Today, our team brings that same energy: friendly, focused, and dedicated to helping brands grow with clarity and confidence.
       </p>
     </div>
   </div>
@@ -247,8 +253,14 @@
 
 <!-- Mission Section -->
 <section class="mission-section text-center">
+  <div class="container">
     <h2 class="fw-bold display-6">Our <span class="text-keyword">Mission</span></h2>
-     
+    <div class="p-4 rounded-3 my-4" style="background:#FFFFFF; border:1px solid var(--border);">
+      <p class="mb-0" style="color:#000000;">
+        Our mission is to help businesses grow through thoughtful, data-driven digital marketing strategies that create long-term value.
+      </p>
+    </div>
+
     <!-- Values -->
     <div class="row g-4">
       <div class="col-lg-3">
@@ -296,7 +308,7 @@
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
       <div class="col">
         <div class="card-glow p-4">
-          <h5 class="fw-bold mt-3">Sruji Vineshkumar</h5>
+          <h5 class="fw-bold mt-3">Thanushiya</h5>
           <p class="text-keyword mb-2">Founder & CEO</p>
           <p class="text-muted small mt-2">As a marketer and entrepreneur, I believe every brand has the right to stand out and shine.</p>
         </div>
@@ -304,8 +316,8 @@
 
       <div class="col">
         <div class="card-glow p-4">
-          <h5 class="fw-bold mt-3">Thanushiya</h5>
-          <p class="text-keyword mb-2">Head of Strategy </p>
+          <h5 class="fw-bold mt-3">Sruji Vineshkumar</h5>
+          <p class="text-keyword mb-2">Head of Strategy</p>
           <p class="text-muted small mt-2">A well-crafted strategy can unlock a brand’s ability to differentiate itself and achieve meaningful growth.</p>
         </div>
       </div>
@@ -331,7 +343,7 @@
           <span class="brand-name" style="color:#E26310;">Twinkling Marketing</span>
         </div>
         <p class="text-secondary small">
-          Let your brand twinkle with us.
+          Turning clicks into loyal customers through marketing strategies powered by data.
         </p>
         <div class="d-flex gap-3">
           <a href="https://www.instagram.com/twinkling_marketing/"><img src="./images/instagram.svg" class="img-fluid" alt="Instagram" style="width:24px;"></a>
@@ -396,10 +408,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
