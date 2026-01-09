@@ -105,7 +105,7 @@ body, html {
 }
 
 .logo{
-  height : 50px;
+  height : 70px;
   width : auto;
   margin-right : 10px;
   border-radius : 10px;
@@ -353,6 +353,7 @@ body, html {
 .about-page .cta-section .btn:hover {
   background-color: #C9550E;
 }
+
 
 
 
