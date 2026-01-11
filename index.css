@@ -110,7 +110,10 @@ body, html {
   margin-right : 10px;
   border-radius : 10px;
 }
-
+.footer-logo {
+  height: 45px;
+  width: auto;
+}
 .brand-name{
   font-size:28px;
   font-weight:bold;
@@ -125,12 +128,15 @@ body, html {
     font-size : 22px;
   }
 }
+/* Compact Navbar Height */
 .navbar {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
 }
-.nav-left{
-  gap: 12px;
+
+/* Align logo & text properly */
+.nav-left {
+  gap: 8px;
 }
 
 
@@ -361,6 +367,7 @@ body, html {
 .about-page .cta-section .btn:hover {
   background-color: #C9550E;
 }
+
 
 
 
