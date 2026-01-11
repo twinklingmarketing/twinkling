@@ -130,8 +130,8 @@ body, html {
 }
 /* Compact Navbar Height */
 .navbar {
-  padding-top: 8px !important;
-  padding-bottom: 8px !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
 }
 
 /* Align logo & text properly */
@@ -291,10 +291,7 @@ body, html {
     footer a:hover {
       color: white;
     }
-.footer-logo {
-  height: 45px;
-  width: auto;
-}
+
  .icon-box {
   width: 32px;
   height: 32px;
@@ -371,6 +368,7 @@ body, html {
 .about-page .cta-section .btn:hover {
   background-color: #C9550E;
 }
+
 
 
 
