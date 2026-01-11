@@ -8,151 +8,121 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
   <link rel = "icon" href = "./images/favicon.png" type = "image/png">
   <style>
-        html{
-        margin:0;
-        padding:0;
-        overflow-x: hidden;
-    }
-    body { 
-        font-family: 'Inter', 
-        sans-serif; 
-        margin:0;
-        padding:0;
-        overflow-x: hidden;
-    }
-    .hero-section{
-      background: linear-gradient(to bottom right, #ffffff, #e0f7ff, #e0ffe0);
-      padding : 80px 0;
-    }
-    .hero-container{
-        margin-top:100px;
-    }
-    .cta-section{
-        padding : 40px 0;
-    }
-    .cta-container{
-        margin-top : 20px;
-    }
-    .icon{
-        width:30px;
-        height: 30px;
-    }
-    .bg-gradient{
-        background: linear-gradient(135deg,#3b82f6,#10b981);
-    }
-    .text-gradient { 
-        background: linear-gradient(135deg,#3b82f6,#10b981); 
-        background-clip : text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent; 
-    }
-    .btn-gradient { 
-        background: linear-gradient(90deg,#10b981,#3b82f6); 
-        color: #fff; 
-        font-weight: 600; 
-    }
-    .card-glow { 
-        box-shadow: 0 10px 30px rgba(59,130,246,0.2);
-        border-radius: 1rem; 
-    }
-    .card-glow:hover{ 
-        scale: (1.05); 
-        box-shadow: 0 10px 30px rgba(59,130,246,0.3);
-    }
-    .badge-gradient { 
-        background: linear-gradient(90deg,#3b82f6,#10b981); 
-        color: #fff; 
-        font-weight: 600; 
-        padding: 0.4rem 0.8rem; 
-        border-radius: 1rem; 
-    }
-    .feature-item::before { 
-        content: "."; 
-        margin-right: 0.5rem; 
-        color: #10b981; 
-    }
-    .step-circle { 
-        width: 60px; 
-        height: 60px; 
-        border-radius: 50%; 
-        display: flex; 
-        align-items: center; 
-        justify-content: center; 
-        color: #fff; 
-        font-weight: bold; 
-        margin: 0 auto; 
-        background: linear-gradient(90deg,#3b82f6,#10b981); 
-    }
-    .step-line { 
-        height: 4px; 
-        background: linear-gradient(90deg,#3b82f6,#10b981); 
-        margin: 0 auto; 
-        opacity: 0.3; 
-    }
-    
-.nav-left{
-  display : flex;
-  align-items : center;
+        /* ================================
+   BRAND COLOR OVERRIDE (TWINKLING)
+   Only colors changed — nothing else
+================================ */
+
+/* Brand Variables */
+:root{
+  --metallic-orange: #E26310;
+  --metallic-orange-hover: #C9550E;
+  --pureblack: #000000;
+  --soft-white: #FAFAFA;
+  --white: #FFFFFF;
 }
 
-.logo{
-  height : 50px;
-  width : auto;
-  margin-right : 10px;
-  border-radius: 10px;
+/* Page Base */
+body{
+  background: var(--soft-white) !important;
+  color: var(--pureblack) !important;
 }
 
-.brand-name{
-  font-size:20px;
-  font-weight:bold;
+/* Replace all gradient usage */
+.text-gradient{
+  background: none !important;
+  -webkit-text-fill-color: var(--metallic-orange) !important;
+  color: var(--metallic-orange) !important;
 }
 
-@media(max-width : 700px){
-  .logo{
-    height : 50px;
-  }
-
-  .brand-name{
-    font-size : 20px;
-  }
+.bg-gradient{
+  background: var(--soft-white) !important;
 }
 
-  .text-gradient {
-    background: linear-gradient(135deg, #3b82f6, #10b981);
-    background-clip : text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .btn-gradient {
-    background: linear-gradient(90deg, #10b981, #3b82f6);
-    color: #fff;
-    border-radius: 0.5rem;
-    transition: opacity 0.3s;
-  }
-  .btn-gradient:hover {
-    opacity: 0.9;
-  }
-      .text-gradient {
-      background: linear-gradient(135deg, #3b82f6, #22c55e);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-    .text-electric-blue {
-      color: hsl(220, 90%, 50%);
-    }
-    footer {
-      background-color: #111827; /* gray-900 equivalent */
-      color: white;
-      padding : 40px 0;
-    }
-    footer a {
-      color: #9ca3af; /* gray-400 */
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-    footer a:hover {
-      color: white;
+/* Hero Section Background */
+.hero-section{
+  background: var(--soft-white) !important;
+}
+
+/* Buttons */
+.btn-gradient{
+  background: var(--metallic-orange) !important;
+  color: var(--white) !important;
+}
+
+.btn-gradient:hover{
+  background: var(--metallic-orange-hover) !important;
+  color: var(--white) !important;
+}
+
+/* Bootstrap primary button */
+.btn-primary{
+  background: var(--metallic-orange) !important;
+  border-color: var(--metallic-orange) !important;
+  color: var(--white) !important;
+}
+
+.btn-primary:hover{
+  background: var(--metallic-orange-hover) !important;
+  border-color: var(--metallic-orange-hover) !important;
+}
+
+/* Outline button */
+.btn-outline-light{
+  border-color: var(--white) !important;
+  color: var(--white) !important;
+}
+
+/* Highlight text (previously text-primary) */
+.text-primary{
+  color: var(--metallic-orange) !important;
+}
+
+/* Icons and bullets */
+.feature-item::before{
+  color: var(--metallic-orange) !important;
+}
+
+.step-circle{
+  background: var(--metallic-orange) !important;
+}
+
+.step-line{
+  background: var(--metallic-orange) !important;
+}
+
+/* Cards shadow tint */
+.card-glow{
+  box-shadow: 0 10px 30px rgba(226, 99, 16, 0.18) !important;
+}
+
+/* Footer stays black */
+footer{
+  background-color: var(--pureblack) !important;
+  color: var(--white) !important;
+}
+footer a{
+  color: rgba(255,255,255,0.7) !important;
+}
+footer a:hover{
+  color: var(--white) !important;
+}
+
+/* Navbar links default */
+.nav-link{
+  color: var(--pureblack) !important;
+}
+
+/* Active Nav Link */
+.nav-link.active{
+  color: var(--metallic-orange) !important;
+  font-weight: 600;
+}
+
+/* CTA section background (was blue/green gradient) */
+.cta-section{
+  background: var(--pureblack) !important;
+}
     }
   </style>
   <script src="https://cdn.jsdelivr.net/npm/lucide/dist/lucide.min.js"></script>
@@ -498,6 +468,7 @@
   </script>
 </body>
 </html>
+
 
 
 
