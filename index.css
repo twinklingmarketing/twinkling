@@ -291,6 +291,10 @@ body, html {
     footer a:hover {
       color: white;
     }
+.footer-logo {
+  height: 45px;
+  width: auto;
+}
  .icon-box {
   width: 32px;
   height: 32px;
@@ -367,6 +371,7 @@ body, html {
 .about-page .cta-section .btn:hover {
   background-color: #C9550E;
 }
+
 
 
 
