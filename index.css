@@ -111,7 +111,7 @@ body, html {
   border-radius : 10px;
 }
 .footer-logo {
-  height: 45px;
+  height: 40px;
   width: auto;
 }
 .brand-name{
@@ -278,19 +278,7 @@ body, html {
   border-radius: 10px;
 }
 
-    footer {
-      background-color: #111827; /* gray-900 equivalent */
-      color: white;
-      padding : 40px 0;
-    }
-    footer a {
-      color: #9ca3af; /* gray-400 */
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-    footer a:hover {
-      color: white;
-    }
+   
 
  .icon-box {
   width: 32px;
@@ -369,21 +357,39 @@ body, html {
   background-color: #C9550E;
 }
 
-/* Footer font fix – same on all pages */
+/* ===== GLOBAL FOOTER FIX ===== */
+
 footer {
+  background-color: #111827;
+  color: #ffffff;
+  padding: 40px 0;
+}
+
+footer .brand-name {
+  font-size: 20px !important;
+  font-weight: 600;
+  color: #E26310;
+}
+
+footer .logo {
+  height: 40px !important;
+  width: auto;
+}
+
+footer p {
   font-size: 14px !important;
   line-height: 1.6;
 }
 
-footer p,
-footer a,
-footer span,
-footer li {
+footer a {
   font-size: 14px !important;
 }
-footer h5 {
-  font-size: 16px !important;
+
+footer img {
+  max-height: 40px;
 }
+
+
 
 
 
