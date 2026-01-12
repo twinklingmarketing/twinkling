@@ -8,19 +8,104 @@ Service.html
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
   <link rel = "icon" href = "./images/favicon.png" type = "image/png">
-  <style>
-        html{
-        margin:0;
-        padding:0;
-        overflow-x: hidden;
-    }
-    body { 
-        font-family: 'Inter', 
-        sans-serif; 
-        margin:0;
-        padding:0;
-        overflow-x: hidden;
-    }
+  :root {
+  --metallic-orange: #E26310;
+  --metallic-orange-hover: #C9550E;
+  --pure-black: #000000;
+  --soft-white: #FAFAFA;
+  --white: #FFFFFF;
+}
+
+/* Remove teal/blue everywhere */
+.text-gradient {
+  background: none !important;
+  color: var(--metallic-orange) !important;
+  -webkit-text-fill-color: var(--metallic-orange) !important;
+}
+
+.bg-gradient,
+.btn-gradient,
+.step-circle {
+  background: var(--metallic-orange) !important;
+}
+
+.btn-gradient:hover,
+.btn-primary:hover {
+  background: var(--metallic-orange-hover) !important;
+}
+
+/* CTA section fix */
+.cta-section {
+  background: var(--metallic-orange) !important;
+}
+
+/* Hero section background */
+.hero-section {
+  background: var(--soft-white) !important;
+}
+
+/* ================================
+   SIZE & LAYOUT FIXES
+   ================================ */
+
+/* Reduce oversized headings */
+h1.display-4 {
+  font-size: 2.3rem !important;
+}
+
+h2.display-5 {
+  font-size: 2rem !important;
+}
+
+h3 {
+  font-size: 1.3rem !important;
+}
+
+h5 {
+  font-size: 1.05rem !important;
+}
+
+/* Reduce paragraph sizes */
+p,
+p.lead {
+  font-size: 1rem !important;
+  line-height: 1.6;
+}
+
+/* Cards spacing fix */
+.card {
+  padding: 1.5rem !important;
+}
+
+/* Process cards tighter */
+.step-circle {
+  width: 48px;
+  height: 48px;
+  font-size: 0.9rem;
+}
+
+/* Navbar button color */
+.btn-primary {
+  background: var(--metallic-orange) !important;
+  border-color: var(--metallic-orange) !important;
+}
+
+/* Footer cleanup */
+footer {
+  background: #111 !important;
+}
+ <style>
+  html{
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+  }
+  body { 
+    font-family: 'Inter', sans-serif; 
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+  }
     .hero-section{
       background: linear-gradient(to bottom right, #ffffff, #e0f7ff, #e0ffe0);
       padding : 80px 0;
@@ -499,5 +584,6 @@ Service.html
   </script>
 </body>
 </html>
+
 
 
