@@ -8,22 +8,27 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
   <link rel = "icon" href = "./images/favicon.png" type = "image/png">
   <style>
+    :root {
+  --metallic-orange: #E26310;
+  --pure-black: #000000;
+  --soft-white: #ffffff;
+}
     body { 
       font-family: 'Inter', sans-serif; 
       margin: 0;
       padding:0;
       overflow-x: hidden;
     }
-    .text-gradient { 
-      background: linear-gradient(135deg, #3b82f6, #10b981);
-      background-clip: text;
-      -webkit-background-clip: text; 
-      -webkit-text-fill-color: transparent; 
-    }
+    .text-gradient {
+  background: linear-gradient(90deg, var(--metallic-orange), var(--metallic-orange));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
     .btn-gradient { background: linear-gradient(90deg,#10b981,#3b82f6); color: #fff; font-weight: 600; }
     .card-glow { box-shadow: 0 10px 30px rgba(59,130,246,0.2); border-radius: 1rem; }
     .badge-gradient { 
-      background: linear-gradient(90deg,#3b82f6,#10b981); 
+      background: var(--metallic-orange); 
       color: #fff; 
       font-weight: 600; 
       padding: 0.5rem 1rem; 
@@ -65,15 +70,16 @@
   }
 }
 
-  .btn-gradient {
-    background: linear-gradient(90deg, #10b981, #3b82f6);
-    color: #fff;
-    border-radius: 0.5rem;
-    transition: opacity 0.3s;
-  }
-  .btn-gradient:hover {
-    opacity: 0.9;
-  }
+.btn-gradient {
+  background: var(--metallic-orange) !important;
+  color: #ffffff !important;
+  border: none;
+}
+
+.btn-gradient:hover {
+  opacity: 0.9;
+}
+
       .text-gradient {
       background: linear-gradient(135deg, #3b82f6, #22c55e);
       -webkit-background-clip: text;
@@ -105,6 +111,25 @@
       align-items: center;
       justify-content: center;
     }
+    .navbar .brand-name {
+  color: var(--metallic-orange) !important;
+  background: none !important;
+  -webkit-text-fill-color: var(--metallic-orange) !important;
+}
+    .btn-gradient img {
+  filter: brightness(0) invert(1);
+}
+
+/* ================= HERO SECTION TEXT ================= */
+.hero-contact h1,
+.hero-contact p {
+  color: var(--pure-black);
+}
+
+/* ================= FOOTER HEADINGS ================= */
+footer h5 {
+  color: #ffffff !important;
+}
   </style>
 </head>
 <body>
@@ -400,6 +425,7 @@ form.addEventListener("submit", async (e) => {
 </script>  
 </body>
 </html>
+
 
 
 
