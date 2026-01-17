@@ -92,12 +92,11 @@
   }
 }
 
-  .text-gradient {
-    background: linear-gradient(135deg, #3b82f6, #10b981);
-    background-clip : text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+.text-gradient {
+  background: linear-gradient(...);
+  -webkit-text-fill-color: transparent;
+}
+
  /* Buttons */
 .btn-primary,
 .btn-gradient {
@@ -149,45 +148,62 @@
   color: var(--white) !important;
 }
     /* ================= HEADING SCALE FIX ================= */
-
-h1.display-4 {
-  font-size: 2.4rem !important;
+/* Headings */
+h1, h2, h3, h4, h5 {
+  color: #000000;
 }
 
-h2.display-5 {
-  font-size: 2rem !important;
+/* Accent text (used for highlighted words) */
+.text-accent {
+  color: #E26310;
+  font-weight: 700;
 }
 
-h3 {
-  font-size: 1.35rem;
+/* Navbar brand text */
+.brand-name {
+  color: #E26310;
 }
 
-.lead {
-  font-size: 1.05rem;
-}
-    section[style*="linear-gradient"] {
-  background: var(--white) !important;
-  color: var(--pure-black) !important;
+/* Navbar active link */
+.nav-link.active {
+  color: #E26310 !important;
+  font-weight: 600;
 }
 
-section[style*="linear-gradient"] h2,
-section[style*="linear-gradient"] p {
-  color: var(--pure-black) !important;
-}
-
-section[style*="linear-gradient"] .btn-outline-light {
-  background: var(--metallic-orange) !important;
-  color: var(--white) !important;
-  border: none !important;
-}
-    /* ================= STATS FIX ================= */
-
+/* Stats numbers */
 .stats-section h3 {
-  color: var(--metallic-orange) !important;
+  color: #E26310;
 }
 
-.stats-section p {
-  color: var(--pure-black);
+/* CTA buttons */
+.btn-primary,
+.btn-gradient {
+  background-color: #E26310 !important;
+  border-color: #E26310 !important;
+  color: #FFFFFF !important;
+}
+
+.btn-primary:hover,
+.btn-gradient:hover {
+  background-color: #C9550E !important;
+  border-color: #C9550E !important;
+}
+
+/* CTA section background (white, clean) */
+.cta-section {
+  background: #FFFFFF !important;
+  color: #000000 !important;
+}
+
+/* Footer brand text */
+footer .brand-name {
+  color: #E26310 !important;
+}
+
+/* Footer normal text */
+footer p,
+footer a {
+  color: #9CA3AF;
 }
     section {
   margin-bottom: 0;
@@ -231,7 +247,7 @@ section[style*="linear-gradient"] .btn-outline-light {
   <!-- Hero Section -->
   <section class="py-5 text-center portfolio-hero">
     <div class="container portfolio-container">
-      <h1 class="display-4 fw-bold">Our <span class="text-gradient">Success Stories</span></h1>
+   <h1>Our <span class="text-accent">Success Stories</span></h1>
       <p class="lead text-muted mt-3">
         Real results from real businesses. See how we've helped companies across various industries achieve their digital marketing goals and drive sustainable growth.
       </p>
@@ -324,7 +340,7 @@ section[style*="linear-gradient"] .btn-outline-light {
         <div class="col-lg-3 col-md-6 col-sm-12">
           <div class = "nav-left">
             <img src="./images/logo.png" alt="Twinkling Marketing logo" class="logo">
-            <span class = "text-gradient brand-name">Twinkling Marketing</span>
+            <span class = "text-center brand-name">Twinkling Marketing</span>
           </div> 
           <p class="text-secondary small">
            Let your brand twinkle with us.
@@ -406,6 +422,7 @@ section[style*="linear-gradient"] .btn-outline-light {
 </script>  
 </body>
 </html>
+
 
 
 
