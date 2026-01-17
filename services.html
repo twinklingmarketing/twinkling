@@ -177,6 +177,55 @@ h2.display-5 {
 p.lead {
   font-size: 1.05rem !important;
 }
+    /* ================= CTA SECTION FIX ================= */
+
+.cta-section {
+  background-color: var(--white);
+}
+
+.cta-section h2 {
+  color: var(--pure-black);
+}
+
+.cta-section p {
+  color: var(--pure-black);
+}
+
+/* Primary CTA button */
+.cta-section .btn-primary {
+  background-color: var(--metallic-orange);
+  border-color: var(--metallic-orange);
+  color: var(--white);
+}
+
+.cta-section .btn-primary:hover {
+  background-color: var(--metallic-orange-hover);
+  border-color: var(--metallic-orange-hover);
+}
+
+/* Secondary CTA button */
+.cta-section .btn-outline-light {
+  color: var(--pure-black);
+  border-color: var(--pure-black);
+}
+
+.cta-section .btn-outline-light:hover {
+  background-color: var(--pure-black);
+  color: var(--white);
+}
+    .badge {
+  background-color: var(--metallic-orange) !important;
+  color: var(--white) !important;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 6px 10px;
+}
+
+.badge:hover {
+  background-color: var(--metallic-orange-hover) !important;
+}
+
+
   </style>
   <script src="https://cdn.jsdelivr.net/npm/lucide/dist/lucide.min.js"></script>
 </head>
@@ -256,7 +305,7 @@ p.lead {
         <!-- Social Media Marketing -->
         <div class="col-lg-6 col-md-6 col-sm-12">
           <div class="card card-glow position-relative p-4 border-2 border-primary">
-            <span class="badge badge-light text-dark position-absolute top-0 start-0 mb-2">Most Popular</span>
+         <span class="badge badge-light text-dark position-absolute top-0 start-0 mb-2"> Most Popular </span>
             <div class="d-flex justify-content-between align-items-start mb-3">
               <div class="d-flex align-items-center justify-content-center btn-gradient p-3 rounded-3" style="width:64px;height:64px;">
                 <img src="./images/users light.svg" class="icon img-fluid">
@@ -430,7 +479,7 @@ p.lead {
   </section>
 
   <!-- CTA Section -->
-  <section class="py-5 cta-section" style="background: linear-gradient(90deg,#3b82f6,#10b981); ">
+  <section class="py-5 cta-section">
     <div class="container text-center text-white cta-container">
       <h2 class="display-5 fw-bold mb-3">Let's Grow Your Business Together</h2>
       <p class="lead mb-4 opacity-75">Ready to take your marketing to the next level? Contact us today to discuss your project.</p>
@@ -453,7 +502,7 @@ p.lead {
             <span class = "text-gradient brand-name">Twinkling Marketing</span>
           </div> 
           <p class="text-secondary small">
-            Turning clicks into loyal customers through marketing strategies powered by data.
+            Let your brand twinkle with us.
           </p>
           <div class="d-flex gap-3">
             <a href="https://www.instagram.com/twinkling_marketing/"><img src="./images/instagram.svg" class="img-fluid" alt="Instagram" style="width:24px;"></a>
@@ -521,6 +570,7 @@ p.lead {
   </script>
 </body>
 </html>
+
 
 
 
