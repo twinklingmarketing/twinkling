@@ -8,6 +8,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
   <link rel = "icon" href = "./images/favicon.png" type = "image/png">
   <style>
+    :root {
+  --metallic-orange: #E26310;
+  --metallic-orange-hover: #C9550E;
+  --pure-black: #000000;
+  --white: #FFFFFF;
+  --soft-white: #FAFAFA;
+}
     html{
       margin:0;
       padding:0;
@@ -43,6 +50,11 @@
       box-shadow: 0 10px 30px rgba(59,130,246,0.2); 
       border-radius: 1rem; 
     }
+    /* Card headers */
+.card-header {
+  background: var(--metallic-orange) !important;
+  color: var(--white) !important;
+}
     .portfolio-hero{
       background: linear-gradient(to bottom right, #ffffff, #e0f7ff, #e0ffe0);
       padding : 80px 0;
@@ -86,15 +98,18 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  .btn-gradient {
-    background: linear-gradient(90deg, #10b981, #3b82f6);
-    color: #fff;
-    border-radius: 0.5rem;
-    transition: opacity 0.3s;
-  }
-  .btn-gradient:hover {
-    opacity: 0.9;
-  }
+ /* Buttons */
+.btn-primary,
+.btn-gradient {
+  background: var(--metallic-orange) !important;
+  border-color: var(--metallic-orange) !important;
+  color: var(--white) !important;
+}
+
+.btn-primary:hover,
+.btn-gradient:hover {
+  background: var(--metallic-orange-hover) !important;
+}
       .text-gradient {
       background: linear-gradient(135deg, #3b82f6, #22c55e);
       -webkit-background-clip: text;
@@ -126,6 +141,54 @@
       align-items: center;
       justify-content: center;
     }
+    /* Badges */
+.badge,
+.badge.bg-primary,
+.badge.bg-secondary {
+  background-color: var(--metallic-orange) !important;
+  color: var(--white) !important;
+}
+    /* ================= HEADING SCALE FIX ================= */
+
+h1.display-4 {
+  font-size: 2.4rem !important;
+}
+
+h2.display-5 {
+  font-size: 2rem !important;
+}
+
+h3 {
+  font-size: 1.35rem;
+}
+
+.lead {
+  font-size: 1.05rem;
+}
+    section[style*="linear-gradient"] {
+  background: var(--white) !important;
+  color: var(--pure-black) !important;
+}
+
+section[style*="linear-gradient"] h2,
+section[style*="linear-gradient"] p {
+  color: var(--pure-black) !important;
+}
+
+section[style*="linear-gradient"] .btn-outline-light {
+  background: var(--metallic-orange) !important;
+  color: var(--white) !important;
+  border: none !important;
+}
+    /* ================= STATS FIX ================= */
+
+.stats-section h3 {
+  color: var(--metallic-orange) !important;
+}
+
+.stats-section p {
+  color: var(--pure-black);
+}
   </style>
 </head>
 <body>
@@ -275,7 +338,7 @@
             <span class = "text-gradient brand-name">Twinkling Marketing</span>
           </div> 
           <p class="text-secondary small">
-            Turning clicks into loyal customers through marketing strategies powered by data.
+           Let your brand twinkle with us.
           </p>
           <div class="d-flex gap-3">
             <a href="https://www.instagram.com/twinkling_marketing/"><img src="./images/instagram.svg" class="img-fluid" alt="Instagram" style="width:24px;"></a>
@@ -354,6 +417,7 @@
 </script>  
 </body>
 </html>
+
 
 
 
